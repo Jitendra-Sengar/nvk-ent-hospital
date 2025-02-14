@@ -4,6 +4,7 @@ import FAQ from "../components/FAQ";
 import { services } from "./Services"; // Import service data
 import { Link } from "react-router-dom";
 import { FaHospitalUser, FaHeartbeat, FaUserMd, FaShieldAlt } from "react-icons/fa";
+import AboutDoctor from "../components/AboutDoctor";
 
 function Home() {
   return (
@@ -62,6 +63,42 @@ function Home() {
 
       {/* About Section */}
       <AboutUs />
+       {/* Services Section - Display Only 3 Services */}
+       <section id="services" className="py-16 px-6 md:px-20 bg-gray-100">
+        <h2 className="text-4xl font-extrabold text-center text-teal-700 mb-8">
+          Our Services
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {services.slice(0, 3).map((service, index) => (
+            <motion.div
+              key={index}
+              className="bg-white shadow-lg rounded-lg p-6 text-center hover:scale-105 transition duration-300"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+            >
+              <div className="text-5xl">{service.icon}</div>
+              <h3 className="text-2xl font-semibold text-teal-700 mt-4">{service.name}</h3>
+              <img
+                src={service.image}
+                alt={service.name}
+                className="w-full h-48 object-cover rounded-lg mt-4"
+              />
+            </motion.div>
+          ))}
+        </div>
+
+        {/* View All Services Button */}
+        <div className="text-center mt-10">
+          <Link
+            to="/services"
+            className="px-6 py-3 bg-teal-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-teal-700 transition duration-300"
+          >
+            View All Services
+          </Link>
+        </div>
+      </section>
 
       {/* Vision & Mission Section */}
       <section className="py-16 px-6 md:px-20 bg-gray-50 text-center">
@@ -92,7 +129,8 @@ function Home() {
           </motion.div>
         </div>
       </section>
-
+      
+      <AboutDoctor/>
       {/* FAQ Section */}
       <FAQ />
     </>
