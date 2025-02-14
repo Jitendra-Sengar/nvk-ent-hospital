@@ -4,27 +4,27 @@ import { motion } from "framer-motion";
     {
       question: "What services do you offer?",
       answer:
-        "🌟 We provide **cutting-edge ENT treatments** such as **endoscopy, laserization, and coblation** to ensure precision and comfort. Our **ICU facilities** and specialized wards are equipped with the latest technology to provide **exceptional care** for all patients.",
+        "🌟 We provide cutting-edge ENT treatments such as endoscopy, laserization, and coblation** to ensure precision and comfort. Our ICU facilities and specialized wards are equipped with the latest technology to provide exceptional care for all patients.",
     },
     {
       question: "How can I book an appointment?",
       answer:
-        "📅 Booking an appointment is easy! You can **schedule a consultation online** through our website or call our contact number for immediate assistance. For **emergency cases**, we offer **priority slots** to ensure you receive timely treatment.",
+        "📅 Booking an appointment is easy! You can schedule a consultation online through our website or call our contact number for immediate assistance. For emergency cases, we offer priority slots to ensure you receive timely treatment.",
     },
     {
       question: "What are the hospital's working hours?",
       answer:
-        "🕘 Our hospital operates **from 9:00 AM to 8:00 PM, seven days a week**. We understand the need for flexibility and provide **extended consultation hours** for busy individuals. **Emergency care** is available 24/7.",
+        "🕘 Our hospital operates from 9:00 AM to 8:00 PM, seven days a week. We understand the need for flexibility and provide **extended consultation hours** for busy individuals. Emergency care is available 24/7.",
     },
     {
       question: "Do you accept insurance?",
       answer:
-        "✅ Yes! We accept **most major insurance providers**. Our administrative team will **guide you through the process**, ensuring hassle-free claims and transparent billing. Contact us to verify your coverage today!",
+        "✅ Yes! We accept most major insurance providers. Our administrative team will guide you through the process, ensuring hassle-free claims and transparent billing. Contact us to verify your coverage today!",
     },
     {
       question: "Where is the hospital located?",
       answer:
-        "📍 **Visit us at** 3-2-15/R, S, T, **Near Santhoshimatha Temple, Jammikunta, Karimnagar Dist.** Our facility is **easily accessible**, with ample parking and public transportation connectivity.",
+        "📍 Visit us at 3-2-15/R, S, T, Near Santhoshimatha Temple, Jammikunta, Karimnagar Dist. Our facility is easily accessible, with ample parking and public transportation connectivity.",
     },
   ];
 

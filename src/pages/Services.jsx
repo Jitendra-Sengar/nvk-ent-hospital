@@ -16,7 +16,7 @@ export const services = [
   {
     name: "Advanced Endo Scopy Unit",
     icon: "🔬",
-    image: "/images/services/endoscopy.jpg",
+    image: "/images/services/e.jpeg",
     description: "Our state-of-the-art endoscopy unit ensures precise diagnosis and treatment of ENT conditions with minimal discomfort."
   },
   {
@@ -49,6 +49,12 @@ export const services = [
     icon: "🔊",
     image: "/images/services/hearingaid.jpg",
     description: "Offering a range of advanced hearing aids tailored to meet individual hearing needs."
+  },
+  {
+    name: "OPD Unit",
+    icon: "💡",
+    image: "/images/services/opt.jpeg",
+    description: "We offer outpatient department for people with health problems who visit the hospital for diagnosis or treatment, but do not at this time require a bed or to be admitted for overnight care."
   },
   {
     name: "Treatment for All ENT Patients",

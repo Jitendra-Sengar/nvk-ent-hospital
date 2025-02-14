@@ -71,7 +71,7 @@ function AboutUs() {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <img
-              src="/images/abouts.jpg"
+              src="/images/aboutss.webp"
               alt="NVK ENT Hospital Exterior"
               className="rounded-lg shadow-xl w-full max-w-lg"
             />
