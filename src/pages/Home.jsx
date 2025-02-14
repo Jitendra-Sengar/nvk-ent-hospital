@@ -63,104 +63,34 @@ function Home() {
       {/* About Section */}
       <AboutUs />
 
-      {/* Services Section - Display Only 3 Services */}
-      <section id="services" className="py-16 px-6 md:px-20 bg-gray-100">
-        <h2 className="text-4xl font-extrabold text-center text-teal-700 mb-8">
-          Our Services
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {services.slice(0, 3).map((service, index) => (
-            <motion.div
-              key={index}
-              className="bg-white shadow-lg rounded-lg p-6 text-center hover:scale-105 transition duration-300"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-            >
-              <div className="text-5xl">{service.icon}</div>
-              <h3 className="text-2xl font-semibold text-teal-700 mt-4">{service.name}</h3>
-              <img
-                src={service.image}
-                alt={service.name}
-                className="w-full h-48 object-cover rounded-lg mt-4"
-              />
-            </motion.div>
-          ))}
-        </div>
-
-        {/* View All Services Button */}
-        <div className="text-center mt-10">
-          <Link
-            to="/services"
-            className="px-6 py-3 bg-teal-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-teal-700 transition duration-300"
+      {/* Vision & Mission Section */}
+      <section className="py-16 px-6 md:px-20 bg-gray-50 text-center">
+        <h2 className="text-4xl font-extrabold text-teal-700 mb-6">Our Vision & Mission</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <motion.div
+            className="p-8 bg-gradient-to-r from-teal-500 to-teal-700 text-white shadow-xl rounded-lg transform hover:scale-105 transition duration-500"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
           >
-            View All Services
-          </Link>
+            <h3 className="text-3xl font-semibold">Vision</h3>
+            <p className="text-lg mt-4">
+              To be a leading center for advanced ENT care with innovation, compassion, and excellence.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="p-8 bg-gradient-to-r from-teal-700 to-teal-900 text-white shadow-xl rounded-lg transform hover:scale-105 transition duration-500"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h3 className="text-3xl font-semibold">Mission</h3>
+            <p className="text-lg mt-4">
+              To deliver advanced ENT care, innovation, and patient well-being.
+            </p>
+          </motion.div>
         </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section className="py-16 px-6 md:px-20  bg-gray-100 flex flex-col md:flex-row items-center">
-        {/* Left Side - Image */}
-        <motion.div
-          className="w-full md:w-1/2 flex justify-center"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <img
-            src="/images/whychoose.jpg"
-            alt="Why Choose Us"
-            className="rounded-lg shadow-xl w-full max-w-lg"
-          />
-        </motion.div>
-
-        {/* Right Side - Content */}
-        <motion.div
-          className="w-full md:w-1/2 text-left mt-10 md:mt-0 md:pl-10"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <h2 className="text-4xl font-extrabold text-teal-700 mb-6">
-            Why Choose Us?
-          </h2>
-
-          <div className="space-y-6">
-            <div className="flex items-center gap-4">
-              <FaUserMd className="text-4xl text-teal-600" />
-              <div>
-                <h3 className="text-xl font-semibold">Expert Doctors</h3>
-                <p className="text-gray-600">Our specialists provide top-quality medical care.</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <FaHospitalUser className="text-4xl text-teal-600" />
-              <div>
-                <h3 className="text-xl font-semibold">Advanced Facilities</h3>
-                <p className="text-gray-600">Equipped with state-of-the-art technology.</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <FaHeartbeat className="text-4xl text-teal-600" />
-              <div>
-                <h3 className="text-xl font-semibold">Compassionate Care</h3>
-                <p className="text-gray-600">We treat our patients with kindness and empathy.</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <FaShieldAlt className="text-4xl text-teal-600" />
-              <div>
-                <h3 className="text-xl font-semibold">Trusted by Many</h3>
-                <p className="text-gray-600">Thousands of happy patients trust our services.</p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </section>
 
       {/* FAQ Section */}

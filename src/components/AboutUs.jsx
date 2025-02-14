@@ -26,25 +26,15 @@ function AboutUs() {
           >
             <div className="bg-white shadow-xl rounded-2xl p-10">
               
-              <p className="text-xl leading-relaxed">
-                NVK ENT Hospital is a specialized healthcare facility dedicated to
-                providing{" "}
-                <span className="font-bold text-teal-600">
-                  exceptional care in Ear, Nose, and Throat (ENT) medicine
-                </span>
-                . Led by{" "}
-                <span className="font-bold text-teal-600">Dr. Koila Thirupathi</span>,
-                our team is committed to delivering
-                <span className="font-bold"> high-quality, patient-centered treatment</span>{" "}
-                using advanced medical technologies and techniques.
+            <p className="text-xl leading-relaxed mt-6">
+                We specialize in diagnosing and treating all ENT-related conditions, from general to advanced specialties like
+                <span className="font-bold text-teal-600"> otology, rhinology, laryngology, facial plastic surgery, cochlear implants, and skull base surgery.</span>
+                Our cutting-edge infrastructure, experienced team, and commitment to patient well-being make us a leader in ENT care. 
+                With a focus on advanced treatments, research, and awareness programs, we aim to provide the highest quality healthcare to our community.
+                <p>Led By:<span className="font-bold text-teal-600">Dr. Koila Thirupathi</span> </p>
+                
               </p>
-              <p className="text-xl leading-relaxed mt-6">
-                With state-of-the-art facilities and a{" "}
-                <span className="font-bold">compassionate approach</span>, we strive to
-                improve the quality of life for our patients through accurate diagnosis,
-                <span className="font-bold"> effective treatments</span>, and ongoing
-                support.
-              </p>
+              
             </div>
           </motion.div>
 
@@ -86,12 +76,15 @@ function AboutUs() {
               <div className="absolute top-0 left-0 w-12 h-12 bg-white text-teal-600 flex items-center justify-center rounded-full transform -translate-y-1/2 -translate-x-1/2">
                 <FaQuoteLeft size={20} />
               </div>
+              
               <p className="text-xl font-semibold text-center leading-relaxed">
-                "Our mission is to provide{" "}
-                <span className="font-bold">top-quality ENT care</span> using
-                <span className="font-bold"> cutting-edge medical technologies</span>{" "}
-                with a<span className="font-bold"> compassionate approach</span>."
+                With state-of-the-art facilities and a{" "}
+                <span className="font-bold">compassionate approach</span>, we strive to
+                improve the quality of life for our patients through accurate diagnosis,
+                <span className="font-bold"> effective treatments</span>, and ongoing
+                support.
               </p>
+             
               <div className="absolute bottom-0 right-0 w-12 h-12 bg-white text-teal-600 flex items-center justify-center rounded-full transform translate-y-1/2 translate-x-1/2">
                 <FaQuoteRight size={20} />
               </div>
